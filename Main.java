@@ -44,6 +44,7 @@ public class Main {
     }
 
     public static void printBoard(char[][] board) {
+        // printing board
         for (int row = 0; row < board.length; row++) {
             for (int col = 0; col < board[row].length; col++) {
                 System.out.print(board[row][col] + " | ");
@@ -65,6 +66,7 @@ public class Main {
                 return true;
             }
         }
+        // diagonal checking
         if (board[0][0] == player && board[1][1] == player && board[2][2] == player) {
             return true;
         }
